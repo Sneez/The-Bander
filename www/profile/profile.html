@@ -1,0 +1,82 @@
+
+<ion-view hide-nav-bar="true">
+
+<!--   <ion-view title="Profile" hide-nav-bar="!otherProfile">
+  <ion-nav-back-button class="button-clear" >
+    <i class="ion-arrow-left-c"></i> Back
+  </ion-nav-back-button>
+ -->
+
+    <div class="lightBlueHeader deepBlueHeader nav-title-slide-ios7 bar bar-header nav-bar">
+        <button class="button lightBlueBtn button-icon icon ion-ios7-arrow-back dag-go-back" ng-click="goBack()" ng-hide="!otherProfile">
+        </button>
+        <h1 class="title">Profile</h1>
+    </div>
+  <ion-content class="padding" >
+    <br>
+    <br>
+    <br>
+    <h1>{{user.name}}'s Profile</h1>
+
+    
+    <div class="list">
+      <div class"item" ng-repeat="(key, invite) in myInvites" type="item-text-wrap">
+        <h4>Friend request from {{invite.userName}}!</h4>
+        <a class="button button-stable button-small" href="#other/profile/{{key}}">View Profile</a>
+        <a class="button button-stable button-small" ng-click="acceptInvite(key, invite.userName)">Accept</a>
+        <a class="button button-stable button-small" ng-click="declineInvite(key)">Decline</a>
+      </div>
+    </div>
+
+<br>
+
+
+  <iframe width="98%" height="315" load-vid frameborder="0" allowfullscreen ng-show="isVideo"></iframe>
+
+
+<br>
+<br>
+  <div class="list list-inset padder">
+
+  <div class="item item-divider forList">
+    User Info
+  </div>
+
+
+  <div class="item forList">
+    Email - <a href="mailto:{{user.email}}">{{user.email}}</a>
+  </div>
+  <div class="item forList">
+    City - {{user.city}}
+  </div>
+  <div class="item forList">
+    State - {{user.state | stateFilter}}
+  </div>
+  <div class="item forList">
+    Instrument(s) - {{user.guitar}} {{user.bass}} {{user.drums}} {{user.vocals}}
+  </div>
+  <div class="item forList">
+    Genre - {{user.genre}}
+  </div>
+  <div class="item forList">
+    Influences - {{user.influences}}
+  </div>
+  <div class="item forList">
+    Goals - {{user.goals}}
+  </div>
+    <br/>
+  </div>
+
+     <button class="button button-stable padder" ng-click="logout()" ng-show="!otherProfile">Log Out</button>
+     <button class="button button-stable padder" ng-click="friendRequest()" ng-show="otherProfile">Add Friend</button>
+     <button class="button button-stable padder" ng-click="sendMessage()" ng-show="otherProfile">Send Message
+     </button>
+     <button class="button button-stable padder" ng-show="!otherProfile" ng-click="openModal()">Edit</button>
+     <br>
+     <br>
+
+    <div id="map-canvas"></div>
+
+
+  </ion-content>
+</ion-view>

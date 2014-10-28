@@ -1,0 +1,186 @@
+html{
+	  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+select{
+  font-size: 15px;
+}
+
+body{
+	font-family: "Ionicons";
+}
+
+.full{
+	height                    : 100vh;
+	width                     : 100vw;
+	top                       :0;
+	right                     :0;
+	bottom                    :0;
+	left                      :0;
+}
+
+.item-input-inset{
+	min-width: 100% !important;
+}
+
+#map-canvas{
+	width: 98vmin;
+	height: 98vmin;
+	margin-right: 1vmin;
+}
+
+
+
+/*.scroll{
+	overflow-y                : scroll;
+	-webkit-overflow-scrolling: touch;
+}*/
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+
+.search-result{
+		
+}
+
+.abs-center{
+	position: relative;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	   -moz-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	     -o-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+}
+
+.play-pause{
+	font-size: 3em;
+	color    : rgba(255,255,255,0.7);
+	width    : 0;
+	height   : 0;
+	position : absolute;
+	left     : 5%;
+	top      : 50%;
+}
+
+
+.thumbnail{
+    position: absolute !important;
+    top: 10px !important;
+    left: 2px !important;
+    bottom: 10px !important;
+    right:5px !important;
+    max-width: 100px !important;
+    /*    max-width: 80px !important;
+    height: 80px !important;
+    width: 100% !important;*/
+}
+
+.item progress{
+	margin-top   : 5px;
+	margin-bottom: 5px;
+	background-color: rgb(255,255,255);
+}
+
+.item-content{
+	padding-right: 10px !important;
+}
+.button-stuff{
+	float: left;
+	padding: 0px 10px;
+}
+.filter-stuff{
+	margin: 0px 10px;
+	width: 200px;
+	float: left;
+	padding: 0px 10px;
+}
+.filter-stuff-genre{
+	margin: 0px 10px;
+	width: 200px;
+	padding: 0px 10px;
+}
+.forList{
+	padding:3px;
+}
+
+.right{
+	position: absolute;
+	right:0;
+}
+
+.padder{
+	padding: 0px 5px;
+}
+
+.padLeft > a.item-content{
+	padding-left: 30px;
+}
+
+.setWidth{
+	width: 100px;
+	float: left;
+}
+
+ion-content{
+	background-color: #CDDAE0;
+}
+
+.setWidthCity{
+	width: 130px;
+	float: left;
+}
+.setWidthGenre{
+	width: 120px;
+	float: left;
+}
+.setWidthState{
+	width: 70px;
+	float: left;
+}
+.buttonColor{
+	background-color: #1A4C6C;
+	color: #CDDAE0;
+}
+.deepBlue > div {
+	background-color: #093654;
+}
+.deepBlueHeader{
+	background-color: #093654;
+}
+.lightBlue > div > a{
+	color: #729BB5;
+}
+.lightBlueBtn{
+	color: #729BB5;
+}
+.lightBlueHeader > h1{
+	color: #CDDAE0;
+}
+.lightBackground{
+	background-color: #CDDAE0;
+}
+.setInstrument{
+	width: 200px;
+	float: left;
+}
+
+.buttonMargin{
+	margin-top: 10px;
+	margin-right: 4px;
+	margin-left: 4px;
+	margin-bottom: 0px;
+}
+
+#searchResults{
+	top: 220px;
+/*	overflow-y: scroll;
+	bottom: 100% !important;*/
+}#searchResults .item{
+	padding-right: 5px !important;
+}#searchResults .right{
+	right:10px !important;
+}
