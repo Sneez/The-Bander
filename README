@@ -1,0 +1,14 @@
+README
+
+---------- BANDER -----------
+Find your future band members!
+
+This is a mobile application that was created using the following technologies:
+
+AngularJS
+Ionic Framework
+Firebase
+Cordova 
+
+
+To run on a browser, simply clone and run on localhost.  
